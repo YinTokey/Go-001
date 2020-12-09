@@ -4,11 +4,12 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"golang.org/x/sync/errgroup"
 	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
+
+	"golang.org/x/sync/errgroup"
 )
 
 func main() {
@@ -23,7 +24,7 @@ func main() {
 		fmt.Printf("启动http监听 \n")
 		err := server.ListenAndServe()
 		if err != nil {
-			fmt.Printf("http server 启动错误 %v",err)
+			fmt.Printf("http server 发生错误 %v \n", err)
 			cancel()
 		}
 		return nil
@@ -37,16 +38,15 @@ func main() {
 
 		select {
 		case sig := <-sigs:
-			fmt.Printf("收到 linux 信号: %s\n", sig)
+			fmt.Printf("\n 收到 linux 信号: %s\n", sig)
 			cancel()
 		case <-groupCtx.Done():
-			fmt.Printf("关闭linux信号监听\n")
+			fmt.Printf(" \n 关闭linux信号监听\n")
 			return groupCtx.Err()
 		}
 
 		return nil
 	})
-
 
 	group.Go(func() error {
 		select {
@@ -54,7 +54,7 @@ func main() {
 			fmt.Printf("http 关闭 \n")
 			err := server.Shutdown(ctx)
 			if err != nil {
-				fmt.Printf(" http关闭错误 %v",err)
+				fmt.Printf(" http关闭错误 %v", err)
 				return err
 			}
 		}
@@ -63,7 +63,7 @@ func main() {
 
 	err := group.Wait()
 
-	if err !=  nil {
+	if err != nil {
 		if errors.Is(err, context.Canceled) {
 			fmt.Printf("context 取消")
 		} else {
