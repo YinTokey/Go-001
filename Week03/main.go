@@ -51,7 +51,7 @@ func main() {
 	group.Go(func() error {
 		select {
 		case <-ctx.Done():
-			fmt.Printf("http 关闭 \n")
+			fmt.Printf("即将关闭 http server \n")
 			err := server.Shutdown(ctx)
 			if err != nil {
 				fmt.Printf(" http关闭错误 %v", err)

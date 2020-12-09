@@ -5,7 +5,7 @@
 启动linux信号监听 
 ^C
  收到 linux 信号: interrupt
-http 关闭 
+即将关闭 http server
 http server 发生错误 http: Server closed 
 ```
 
