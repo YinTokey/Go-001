@@ -11,7 +11,15 @@ import (
 // DB 数据库链接单例
 var sqlDB *sql.DB
 
-var Provider = wire.NewSet(NewDB)
+var Provider = wire.NewSet(NewDB,NewDao)
+
+type dao struct {
+	db *sql.DB
+}
+
+func NewDao(db *sql.DB) (*dao, error)  {
+	return &dao{db: db}, nil
+}
 
 func NewDB() (db *sql.DB, cf func(), err error) {
 	// 连接数据库

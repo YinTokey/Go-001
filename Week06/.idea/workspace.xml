@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66e8f1af-14bf-4c18-80ef-8f8adec950b9" name="Default Changelist" comment="" />
+    <list default="true" id="66e8f1af-14bf-4c18-80ef-8f8adec950b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Week04/.idea/go_lottery.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week04/.idea/go_lottery.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week04/conf/conf.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Week04/conf/conf.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week04/dao/dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Week04/dao/dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week04/di/wire.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week04/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Week04/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week04/server/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week04/services/picture_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Week04/services/picture_service.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,14 +51,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoProjectSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/server" />
-      <recent name="$PROJECT_DIR$/di" />
-      <recent name="$PROJECT_DIR$/dao" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/sample/message" />
     </key>
@@ -129,10 +135,6 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="408" y="102" width="463" height="627" key="#Build_Tags_&amp;_Vendoring" timestamp="1608287337994">
-      <screen x="0" y="25" width="1280" height="775" />
-    </state>
-    <state x="408" y="102" width="463" height="627" key="#Build_Tags_&amp;_Vendoring/0.25.1280.775@0.25.1280.775" timestamp="1608287337994" />
     <state x="293" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605933072338">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
@@ -141,38 +143,34 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="378" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1280.775@0.25.1280.775" timestamp="1606049859480" />
-    <state width="1238" height="148" key="GridCell.Tab.0.bottom" timestamp="1608212053552">
+    <state width="1238" height="166" key="GridCell.Tab.0.bottom" timestamp="1609676807677">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1238" height="148" key="GridCell.Tab.0.bottom/0.25.1280.775/1280.25.1020.739@0.25.1280.775" timestamp="1608212053552" />
-    <state width="1238" height="148" key="GridCell.Tab.0.bottom/0.25.1280.775@0.25.1280.775" timestamp="1608129794298" />
-    <state width="1238" height="148" key="GridCell.Tab.0.center" timestamp="1608212053506">
+    <state width="1238" height="166" key="GridCell.Tab.0.bottom/0.25.1280.775@0.25.1280.775" timestamp="1609676807677" />
+    <state width="1238" height="166" key="GridCell.Tab.0.center" timestamp="1609676807676">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1238" height="148" key="GridCell.Tab.0.center/0.25.1280.775/1280.25.1020.739@0.25.1280.775" timestamp="1608212053506" />
-    <state width="1238" height="148" key="GridCell.Tab.0.center/0.25.1280.775@0.25.1280.775" timestamp="1608129794296" />
-    <state width="1238" height="148" key="GridCell.Tab.0.left" timestamp="1608212053503">
+    <state width="1238" height="166" key="GridCell.Tab.0.center/0.25.1280.775@0.25.1280.775" timestamp="1609676807676" />
+    <state width="1238" height="166" key="GridCell.Tab.0.left" timestamp="1609676807675">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1238" height="148" key="GridCell.Tab.0.left/0.25.1280.775/1280.25.1020.739@0.25.1280.775" timestamp="1608212053503" />
-    <state width="1238" height="148" key="GridCell.Tab.0.left/0.25.1280.775@0.25.1280.775" timestamp="1608129794296" />
-    <state width="1238" height="148" key="GridCell.Tab.0.right" timestamp="1608212053544">
+    <state width="1238" height="166" key="GridCell.Tab.0.left/0.25.1280.775@0.25.1280.775" timestamp="1609676807675" />
+    <state width="1238" height="166" key="GridCell.Tab.0.right" timestamp="1609676807676">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1238" height="148" key="GridCell.Tab.0.right/0.25.1280.775/1280.25.1020.739@0.25.1280.775" timestamp="1608212053544" />
-    <state width="1238" height="148" key="GridCell.Tab.0.right/0.25.1280.775@0.25.1280.775" timestamp="1608129794297" />
-    <state x="87" y="59" key="SettingsEditor" timestamp="1608287834547">
+    <state width="1238" height="166" key="GridCell.Tab.0.right/0.25.1280.775@0.25.1280.775" timestamp="1609676807676" />
+    <state x="205" y="48" key="SettingsEditor" timestamp="1609675765394">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="87" y="59" key="SettingsEditor/0.25.1280.775@0.25.1280.775" timestamp="1608287834547" />
-    <state x="398" y="122" width="595" height="580" key="find.popup" timestamp="1608125014956">
+    <state x="205" y="48" key="SettingsEditor/0.25.1280.775@0.25.1280.775" timestamp="1609675765394" />
+    <state x="398" y="122" width="595" height="580" key="find.popup" timestamp="1606658804166">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="398" y="122" width="595" height="580" key="find.popup/0.25.1280.775@0.25.1280.775" timestamp="1608125014956" />
-    <state x="268" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1608127069481">
+    <state x="398" y="122" width="595" height="580" key="find.popup/0.25.1280.775@0.25.1280.775" timestamp="1606658804166" />
+    <state x="268" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1606027406693">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="268" y="124" width="670" height="676" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1608127069481" />
+    <state x="268" y="124" width="670" height="676" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1606027406693" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

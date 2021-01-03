@@ -13,11 +13,11 @@ import (
 
 func main() {
 
-	// TODO  wire 生成代码报错，还没理解透
-	//_, err := di.InitApp()
-	//if err != nil {
-	//	panic(err)
-	//}
+	// TODO  wire 生成代码报错，还没理解
+	err := server.InitApp()
+	if err != nil {
+		panic(err)
+	}
 
 	// server初始化
 	server := &http.Server{
