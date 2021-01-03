@@ -47,7 +47,7 @@ func (r *RollingNumber) UpdateRollingMax(event Event, value int32) {
 // 清空数据
 func (r *RollingNumber) Reset() {
 	// 清空环形队列
-	r.buckets.clear()
+	r.buckets.Clear()
 }
 
 //根据event type 获取所有Bucket 某index 总和
@@ -68,7 +68,7 @@ func (r *RollingNumber) GetRollingSum(event Event) int32 {
 // 获取最后一个bucket 值
 func (r *RollingNumber) GetValueOfLatestBucket(event Event) int32 {
 
-	return r.buckets.getLast().(*Bucket).GetAdder(event)
+	return r.buckets.GetLast().(*Bucket).GetAdder(event)
 }
 
 // 获取所有bucket 某一个索引的所有值
@@ -94,7 +94,7 @@ func (r *RollingNumber) GetRollingMaxValue(event Event) int32 {
 func (r *RollingNumber) GetCurrentBucket() *Bucket {
 	currentTime := time.Now().Unix()
 
-	var bucket *Bucket = r.buckets.getLast().(*Bucket)
+	var bucket *Bucket = r.buckets.GetLast().(*Bucket)
 	if bucket != nil && currentTime < bucket.windowStart+(int64(r.bucketSizeInMillseconds)) {
 		return bucket
 	}
@@ -103,7 +103,7 @@ func (r *RollingNumber) GetCurrentBucket() *Bucket {
 	r.mux.Lock()
 	defer r.mux.Unlock()
 
-	if r.buckets.getLast() == nil {
+	if r.buckets.GetLast() == nil {
 
 		bucket = NewBucket(currentTime)
 		r.buckets.Push(bucket)
@@ -112,7 +112,7 @@ func (r *RollingNumber) GetCurrentBucket() *Bucket {
 	}
 
 	for i := 0; i < r.buckets.curSize(); i++ {
-		bucket = r.buckets.getLast().(*Bucket)
+		bucket = r.buckets.GetLast().(*Bucket)
 		if currentTime < bucket.windowStart+(int64(r.bucketSizeInMillseconds)) {
 			// 在窗口时间内，返回 bucket
 			return bucket
@@ -127,7 +127,7 @@ func (r *RollingNumber) GetCurrentBucket() *Bucket {
 
 	}
 
-	return r.buckets.getLast().(*Bucket)
+	return r.buckets.GetLast().(*Bucket)
 }
 
 //简单的冒泡排序

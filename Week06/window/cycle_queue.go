@@ -50,23 +50,13 @@ func (q *CycleQueue) isFull() bool {
 	return (q.tail+1)%q.maxSize == q.head
 }
 
-// 队列是否空了
-func (q *CycleQueue) isEmpty() bool {
-	return q.tail == q.head
-}
-
 // 当前数量
 func (q *CycleQueue) curSize() int {
 	return (q.tail - q.head + q.maxSize) % q.maxSize
 }
 
-// 剩余数量
-func (q *CycleQueue) remainSize() int {
-	return q.maxSize - 1 - q.curSize()
-}
-
 // 获取队尾元素
-func (q *CycleQueue) getLast() interface{} {
+func (q *CycleQueue) GetLast() interface{} {
 
 	if q.tail == q.head {
 		return nil
@@ -77,7 +67,7 @@ func (q *CycleQueue) getLast() interface{} {
 }
 
 // 清空队列
-func (q *CycleQueue) clear() {
+func (q *CycleQueue) Clear() {
 	currentSize := q.curSize()
 	for i := 0; i < currentSize; i++ {
 		q.Pop()
