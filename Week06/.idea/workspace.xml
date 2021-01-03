@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66e8f1af-14bf-4c18-80ef-8f8adec950b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Week04/.idea/go_lottery.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week04/.idea/go_lottery.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week04/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week04/conf/conf.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Week04/conf/conf.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week04/dao/dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Week04/dao/dao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week04/di/wire.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week04/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Week04/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week04/server/router.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week04/services/picture_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Week04/services/picture_service.go" afterDir="false" />
-    </list>
+    <list default="true" id="66e8f1af-14bf-4c18-80ef-8f8adec950b9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +32,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -51,7 +43,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -143,6 +135,10 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="378" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1280.775@0.25.1280.775" timestamp="1606049859480" />
+    <state x="350" y="149" width="692" height="651" key="EditFileWatcherDialog" timestamp="1609678509493">
+      <screen x="0" y="25" width="1280" height="775" />
+    </state>
+    <state x="350" y="149" width="692" height="651" key="EditFileWatcherDialog/0.25.1280.775@0.25.1280.775" timestamp="1609678509493" />
     <state width="1238" height="166" key="GridCell.Tab.0.bottom" timestamp="1609676807677">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
@@ -159,10 +155,10 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state width="1238" height="166" key="GridCell.Tab.0.right/0.25.1280.775@0.25.1280.775" timestamp="1609676807676" />
-    <state x="205" y="48" key="SettingsEditor" timestamp="1609675765394">
+    <state x="205" y="48" key="SettingsEditor" timestamp="1609678511848">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="205" y="48" key="SettingsEditor/0.25.1280.775@0.25.1280.775" timestamp="1609675765394" />
+    <state x="205" y="48" key="SettingsEditor/0.25.1280.775@0.25.1280.775" timestamp="1609678511848" />
     <state x="398" y="122" width="595" height="580" key="find.popup" timestamp="1606658804166">
       <screen x="0" y="25" width="1280" height="775" />
     </state>

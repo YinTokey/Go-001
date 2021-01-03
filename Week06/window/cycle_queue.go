@@ -65,6 +65,7 @@ func (q *CycleQueue) remainSize() int {
 	return q.maxSize - 1 - q.curSize()
 }
 
+// 获取队尾元素
 func (q *CycleQueue) getLast() interface{} {
 
 	if q.tail == q.head {
@@ -72,5 +73,13 @@ func (q *CycleQueue) getLast() interface{} {
 	} else {
 
 		return q.data[(q.tail-1)/q.maxSize]
+	}
+}
+
+// 清空队列
+func (q *CycleQueue) clear() {
+	currentSize := q.curSize()
+	for i := 0; i < currentSize; i++ {
+		q.Pop()
 	}
 }
